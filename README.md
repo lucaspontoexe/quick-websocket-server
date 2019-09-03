@@ -1,4 +1,7 @@
 # quick-websocket-server
-A WebSocket server, and it's pretty quick
+A WebSocket server, and it's pretty quick to set up
 
-[WIP]
+## Usage
+`node index.js <port>`
+
+Default port is `9999`

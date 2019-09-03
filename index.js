@@ -1,8 +1,8 @@
 const WebSocket = require('ws');
+const port = process.argv[2] || 9999;
+const wss = new WebSocket.Server({ port });
 
-const wss = new WebSocket.Server({ port: 9999 });
-
-console.log('now running the server on port 9999')
+console.log(`now running the server on port ${port}`)
 
 wss.on('connection', function connection(ws) {
   ws.on('message', function incoming(data) {
